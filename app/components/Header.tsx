@@ -19,7 +19,7 @@ export default function Header() {
         <Link href="/">
           <Image
           src={"/logo.png"}
-          alt="Camindo Dorado Stays Logo"
+          alt="Camino Dorado Stays Logo"
           height={scrolled ? 50 : 100}
           width={scrolled ? 50 : 100}
           className="mb-2 transition-all duration-300"
@@ -31,7 +31,7 @@ export default function Header() {
             scrolled ? "text-2xl" : "text-3xl"
           }`}
         >
-          Camindo Dorado Stays
+          Camino Dorado Stays
         </h1></Link>
 
       </div>
