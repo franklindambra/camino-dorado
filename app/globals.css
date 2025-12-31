@@ -28,3 +28,7 @@ body {
 .orangeBg {
   background-color: #e37243;
 }
+
+html {
+  scroll-behavior: smooth;
+}
