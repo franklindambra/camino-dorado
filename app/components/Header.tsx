@@ -14,7 +14,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full py-4 fixed backdrop-blur-md flex   z-20 shadow-2xl bg-[#e37243]/70">
+    <header className="w-full py-4 fixed backdrop-blur-md flex z-20 shadow-2xl bg-[#e37243]/70">
       <div className="max-w-300 w-full mx-auto px-5 flex flex-col ">
         <Link href="/">
           <Image
