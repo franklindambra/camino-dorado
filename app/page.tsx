@@ -60,7 +60,7 @@ export default function Home() {
           <hr className="w-75 mb-6"></hr>
         </div>
         <div className="flex justify-center">
-          <p className="text-center mb-10 max-w-200 opacity-70">
+          <p className="text-center mb-10 max-w-120 opacity-70">
             No matter the model, we prioritize your peace of mind with vetted
             guests, comprehensive insurance, and 24/7 support
           </p>
