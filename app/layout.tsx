@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
@@ -21,9 +22,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.variable} antialiased`}>
         <Header />
-        <main className="pt-20 min-h-screen flex flex-col items-center">
+        <main className="pt-36 min-h-screen flex flex-col items-center">
           {children}
         </main>
+        <Toaster
+          position="bottom-right"
+          toastOptions={{
+            style: {
+              background: "#fff",
+              color: "#333",
+            },
+          }}
+        />
       </body>
     </html>
   );
