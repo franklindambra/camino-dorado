@@ -5,7 +5,7 @@ interface ImageRowProps {
 export default function ImageRow({ backgroundImage }: ImageRowProps) {
   return (
     <div
-      className="w-full h-[600px] bg-red-400 bg-cover bg-center"
+      className="w-full h-[600px] bg-cover bg-center"
       style={{
         backgroundImage: backgroundImage
           ? `url(${backgroundImage})`

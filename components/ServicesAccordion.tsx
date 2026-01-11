@@ -11,17 +11,17 @@ interface Props {
 }
 
 export default ({ data }: Props) => (
-  <Accordion.Root type="single" collapsible className="shadow-lg">
+  <Accordion.Root type="single" collapsible>
     {data.map((service, i) => (
-      <Accordion.Item key={i} value={`item-${i + 1}`}>
-        <Accordion.Header className="flex">
-          <Accordion.Trigger className="AccordionTrigger p-5 cursor-pointer bg-gray-200 flex items-center gap-5 w-full">
+      <Accordion.Item key={i} value={`item-${i + 1}`} className="rounded-lg">
+        <Accordion.Header className="flex rounded-lg">
+          <Accordion.Trigger className="AccordionTrigger p-5 cursor-pointer bg-gray-200 flex items-center gap-5 w-full rounded mb-2">
             {service.title}
             <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </Accordion.Trigger>
         </Accordion.Header>
-        <Accordion.Content className="AccordionContent ">
-          <p className="p-5">{service.description}</p>
+        <Accordion.Content className="AccordionContent">
+          <p className="p-5 opacity-70">{service.description}</p>
         </Accordion.Content>
       </Accordion.Item>
     ))}

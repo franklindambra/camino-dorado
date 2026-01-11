@@ -32,7 +32,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="mx-auto p-8 bg-white shadow-lg rounded w-full md:max-w-400"
+      className="mx-auto p-8 md:p-10 bg-white shadow-lg rounded-lg w-full md:max-w-400"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
         {/* Left Column: Stacked Inputs */}
