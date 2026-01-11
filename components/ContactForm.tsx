@@ -27,7 +27,7 @@ export default function ContactForm() {
 
   const inputClass =
     "w-full border border-gray-300 bg-transparent p-2 outline-none bg-white rounded";
-  const labelClass = "block mb-1 text-left";
+  const labelClass = "block mb-1 text-left opacity-70";
 
   return (
     <form
