@@ -1,19 +1,19 @@
-import Image from "next/image";
-import CTA from "./components/CTA";
-import ServicesAccordion from "./components/ServicesAccordion";
+import CTA from "../components/CTA";
+import ServicesAccordion from "../components/ServicesAccordion";
 import { airbnbArbitrage, cohosting } from "./services";
 import { HomeIcon, PersonIcon } from "@radix-ui/react-icons";
-import ContactForm from "./components/ContactForm";
-import ImageRow from "./components/ImageRow";
+import ContactForm from "../components/ContactForm";
+import ImageRow from "../components/ImageRow";
+import BeamsBackground from "@/components/kokonutui/beams-background";
 
 export default function Home() {
   return (
     <>
-      <ImageRow />
+      <ImageRow backgroundImage={"/images/house3.jpg"} />
       <div className="flex flex-col items-center justify-center py-20 px-5">
         <h2 className="text-2xl mb-5">Welcome to Camino Dorado Stays</h2>
         <h1 className="text-5xl text-center leading-15 mb-6">
-          Your Partner in Effortless Short-Term Rental Success
+          Your Partner in Effortless<br></br>Short-Term Rental Success
         </h1>
         <hr className="w-75  mb-10"></hr>
         <p className="mb-10 max-w-120 text-center">
@@ -23,10 +23,10 @@ export default function Home() {
         </p>
         <CTA />
       </div>
-      <ImageRow />
+      <ImageRow backgroundImage={"/images/house1.jpg"} />
       <div className="flex flex-col items-center justify-center py-20 px-5">
         <h1 className="text-5xl text-center leading-15 mb-6">
-          Why Partner with Us for Airbnb Arbitrage & Co-Hosting?
+          Why Partner with Us for<br></br>Airbnb Arbitrage & Co-Hosting?
         </h1>
         <hr className="w-75 mb-10"></hr>
         <p className="mb-5 max-w-200 text-center">
@@ -47,16 +47,15 @@ export default function Home() {
         </p>
         <CTA />
       </div>
-      <ImageRow />
+      <ImageRow backgroundImage={"/images/house2.jpg"} />
       <div className="max-w-300 w-full mx-auto px-5 flex flex-col px-5 py-20">
         <h2 className="text-5xl mb-6 text-center">
-          Services Tailored for Property Owners Like You
+          Services Tailored for <br></br>Property Owners Like You
         </h2>
         <div className="flex justify-center">
           <hr className="w-75 mb-6"></hr>
         </div>
         <div className="flex justify-center">
-          {" "}
           <p className="text-center mb-20 max-w-100">
             No matter the model, we prioritize your peace of mind with vetted
             guests, comprehensive insurance, and 24/7 support
@@ -65,20 +64,21 @@ export default function Home() {
 
         <div className="mb-10">
           <div className="flex flex-col items-center mb-5">
-            <HomeIcon className="w-12 h-12 mb-2" />
+            <HomeIcon className="w-8 h-8 mb-2" />
             <h1 className="text-2xl text-center">Airbnb Arbitrage</h1>
           </div>
           <ServicesAccordion data={airbnbArbitrage} />
         </div>
         <div>
           <div className="flex flex-col items-center mb-5">
-            <PersonIcon className="w-12 h-12 mb-2" />
+            <PersonIcon className="w-8 h-8 mb-2" />
             <h1 className="text-2xl text-center">Co-Hosting</h1>
           </div>
           <ServicesAccordion data={cohosting} />
         </div>
       </div>
-      <div id="contact" className="w-full  bg-red-400 p-20">
+
+      <BeamsBackground>
         <p className="text-5xl text-center mb-5">
           Ready to Get Started?<br></br> Let's Chat.
         </p>
@@ -90,9 +90,8 @@ export default function Home() {
             Dorado Stays can elevate your property.
           </p>
         </div>
-
         <ContactForm />
-      </div>
+      </BeamsBackground>
     </>
   );
 }
