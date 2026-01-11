@@ -11,7 +11,8 @@ export default function Home() {
     <>
       <ImageRow backgroundImage={"/images/house3.jpg"} />
       <div className="flex flex-col items-center justify-center py-20 px-5">
-        <h2 className="text-2xl mb-5">Welcome to Camino Dorado Stays</h2>
+        <h2 className="text-center">Welcome to</h2>
+        <h2 className="text-2xl mb-5 text-center">Camino Dorado Stays</h2>
         <h1 className="text-5xl text-center leading-15 mb-6">
           Your Partner in Effortless<br></br>Short-Term Rental Success
         </h1>
