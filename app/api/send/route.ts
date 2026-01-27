@@ -17,8 +17,8 @@ export async function POST(req: Request) {
 
   try {
     const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>", // Use your verified domain
-      to: ["your-email@example.com"],
+      from: "info@camino-dorado.com", // Use your verified domain
+      to: ["hostcesar@gmail.com"],
       subject: `New Lead: ${firstName} ${lastName}`,
       text: `
         Name: ${firstName} ${lastName}
