@@ -6,6 +6,19 @@ import ContactForm from "../components/ContactForm";
 import ImageRow from "../components/ImageRow";
 import BeamsBackground from "@/components/kokonutui/beams-background";
 
+
+export const metadata = {
+  title: "Camino Dorado Stays",
+  description:
+    "Your Partner in Effortless Short-Term Rental Success. We specialize in Airbnb arbitrage and co-hosting.",
+  openGraph: {
+    images: ["/meta/camino-dorado-stays.jpg"],
+  },
+  twitter: {
+    images: ["/meta/camino-dorado-stays.jpg"],
+  },
+};
+
 export default function Home() {
   return (
     <>
