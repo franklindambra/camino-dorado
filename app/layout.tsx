@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import { FathomAnalytics } from "@/components/fathom";
 
-
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
 });
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfairDisplay.variable} antialiased`}>
-<FathomAnalytics/>
+        <FathomAnalytics />
         <Header />
         <main className="pt-29 min-h-screen flex flex-col items-center">
           {children}
@@ -38,8 +37,7 @@ export default function RootLayout({
               color: "#333",
             },
           }}
-          />
-
+        />
       </body>
     </html>
   );
